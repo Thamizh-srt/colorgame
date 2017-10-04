@@ -1,0 +1,119 @@
+/* nice gray RGB(35, 74, 71) */
+html {
+  font-family: "Raleway", sans-serif !important;
+}
+body {
+  margin: 0;
+  background-color: #232323;
+  font-size: 14px;
+}
+
+h1 {
+  color: white;
+  background-color: rgb(51, 122, 183);
+  margin: 0;
+  padding: 1%;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+}
+
+#goalDisplay {
+  text-transform: uppercase;
+  display: block;
+  font-size: 3rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#toolbar {
+  background-color: white;
+  margin-bottom: 1.5%;
+  text-align: center;
+}
+
+#status {
+  display: inline-block;
+  width: 40%;
+  margin: 0;
+  text-align: center;
+}
+
+#toolbar button {
+  border: 0;
+  padding: 0.3em 1em;
+  font-weight: 700;
+  font-family: inherit;
+  text-transform: uppercase;
+  background-color: white;
+  outline: 0;
+  transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+}
+
+#toolbar button:hover {
+  background-color: rgb(51, 122, 183);
+  color: white;
+}
+
+#toolbar .selected {
+  background-color: rgb(51, 122, 183);
+  color: white;
+}
+
+#newGame {
+  width: 120px;
+}
+
+#help {
+  float: right;
+  height: 20px;
+  width: 20px;
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 1% 1% 0 0;
+  padding: 1px 1px 0 0;
+  outline: 0;
+  transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;  
+}
+
+#help:hover {
+  background-color: white;
+  color: rgb(51, 122, 183);
+}
+
+.square {
+  display: block;
+  float: left;
+  width: 30%;
+  margin: 1.66%;
+  padding-bottom: 30%;
+  border-radius: 1rem;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+}
+
+.hidden {
+  display: none;
+}
+
+#dialog-about {
+  display: none;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5em;
+}
