@@ -75,6 +75,7 @@ var statusDisplay = document.getElementById("status");
 var btnNewGame = document.getElementById("newGame");
 var btnEasyMode = document.getElementById("easymode");
 var btnHardMode = document.getElementById("hardmode");
+var overlay = document.getElementById("overlay");
 
 newGame();
 
@@ -110,28 +111,15 @@ for (var i = 0; i < squares.length; i++) {
       this.style.backgroundColor = "transparent";
     }
   });
-}
+}  
 
-  $( function() {
-    $( "#dialog-about" ).dialog({
-      resizable: false,
-      autoOpen: false,
-      show: 300,
-      hide: 200,
-      height: "auto",
-      width: 600,
-      maxHeight: 400,
-      modal: true,
-      buttons: {
-        Close: function() {
-          $( this ).dialog( "close" );
-        }
-      }
-    });
-  } );
+document.getElementById("help").addEventListener("click", function() {
+  overlay.style.visibility = "visible";
+  overlay.style.opacity = 1;
+} );
+
+document.getElementById("btnClose").addEventListener("click", function() {
+  setTimeout(function(){ overlay.style.visibility = "hidden"; }, 500);
+  overlay.style.opacity = 0;
   
-
-  document.getElementById("help").addEventListener("click", function() {
-    $( "#dialog-about" ).dialog("open");
-  } );
-
+} );
